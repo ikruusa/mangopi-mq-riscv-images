@@ -8,6 +8,19 @@ u:root
 pwd: mangopi
 ```
 
+Default Wifi configuration:
+```
+# cat /etc/wpa_supplicant.conf
+ap_scan=1
+
+network={
+        ssid="YOURSSID"
+        scan_ssid=1
+        key_mgmt=WPA-PSK
+        psk="YOURPASSWD"
+}
+```
+
 Kernel:
 ```
 # uname -a
@@ -179,19 +192,6 @@ tmpfs                    22.3M         0     22.3M   0% /dev/shm
 tmpfs                    22.3M     28.0K     22.2M   0% /tmp
 tmpfs                    22.3M     32.0K     22.2M   0% /run
 /dev/sda1                60.1G     35.7G     24.5G  59% /mnt/disk
-```
-
-Default Wifi configuration:
-```
-# cat /etc/wpa_supplicant.conf
-ap_scan=1
-
-network={
-        ssid="YOURSSID"
-        scan_ssid=1
-        key_mgmt=WPA-PSK
-        psk="YOURPASSWD"
-}
 ```
 
 Default list of processes after reboot:
