@@ -20,6 +20,30 @@ network={
         psk="YOURPASSWD"
 }
 ```
+To generate encrypted password:
+```
+# wpa_passphrase yourssid yourpasswd
+```
+Replace your plaintext password in /etc/wpa_supplicant.conf
+
+When Wifi is configured restart networking and check your ip after a moment:
+```
+# /etc/init.d/S40network restart
+# ip a
+```
+Now you can login via `ssh` also.
+
+What the system includes:
+* linux kernel 6.6.0-rc7 riscv64
+* swap memory support - you may run low on RAM!
+* ssh server (dropbear)
+* python 3.11.6 with modules `libevdev` `spidev` `smbus_cffi` `serial` `requests` `can`
+* preinstalled CA certificates
+* `nano` text editor
+* vfat/exfat/ext2 support and tools
+* `htop` and `iotop` for monitoring
+* simple demo scripts under `/root`
+
 
 Kernel:
 ```
