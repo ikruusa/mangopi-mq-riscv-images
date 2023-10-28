@@ -1,6 +1,6 @@
 # mangopi-mq-riscv-images
 
-Small linux system image (ca. 30MB compressed) for MangoPi MQ F133/D1s board. System was built using the customized buildroot configuration.
+Small linux system image (ca. 30MB compressed) for MangoPi MQ Dual (F133/D1s cpu) board. System was built using the customized buildroot configuration.
 
 Login:
 ```
