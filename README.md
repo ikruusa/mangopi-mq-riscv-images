@@ -44,6 +44,25 @@ What the system includes:
 * `htop` and `iotop` for monitoring
 * simple demo scripts under `/root`
 
+Activated interfaces:
+<br>
+<div align="center">
+<img src="pics/activated-interfaces.png" width=60% />
+</div>
+<br>
+Header pin names:
+<br>
+<div align="center">
+<img src="pics/headers-and-ports.png" width=60% />
+</div>
+<br>
+Original board description:
+<br>
+<div align="center">
+<img src="pics/mqv1p6.png" width=70% />
+</div>
+<br>
+<hr>
 
 Kernel:
 ```
